@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "workspaces": [
+    "js-lib",
+    "ts-lib",
+    "js-app",
+    "ts-app"
+  ]
+}
