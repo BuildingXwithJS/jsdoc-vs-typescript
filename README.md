@@ -8,6 +8,8 @@ This repository contains code and related materials for [JSDoc vs Typescript?! C
 
 This is a small demo showing differences between JSDoc and Typescript DX while developing libs and apps in javascript and typescript.
 
+Stream conclusion: JSDoc provides comparable DX (when using VS Code) in both - js and ts projects (although importing JSDoc declarations into ts projects requires additional work)
+
 ## Related links
 
 - [JSDoc](https://jsdoc.app/)
