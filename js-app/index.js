@@ -7,6 +7,7 @@ const main = async () => {
 
   const tsPokemon = await getTsPokemon('eevee');
   console.log('got pokemon from ts:', tsPokemon);
+  // tsPokemon
 };
 
 main().catch((error) => console.error('Something blew up:', error));

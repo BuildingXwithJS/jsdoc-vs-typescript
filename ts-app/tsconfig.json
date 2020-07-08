@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    /* Basic Options */
+    "target": "ESNext",
+    "module": "ESNext",
+
+    /* Strict Type-Checking Options */
+    "strict": true,
+
+    /* Module Resolution Options */
+    "moduleResolution": "node",
+
+    /* Advanced Options */
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+
+    /* js lib jsdoc imports */
+    "allowJs": true,
+    "checkJs": true
+  },
+  "include": ["index.ts", "../js-lib/index.js"],
+  "exclude": ["node_modules"]
+}

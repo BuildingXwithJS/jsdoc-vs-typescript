@@ -1,8 +1,15 @@
 {
   "name": "ts-app",
   "version": "1.0.0",
-  "dependencies": {},
+  "scripts": {
+    "start": "ts-node index.ts"
+  },
+  "dependencies": {
+    "ts-lib": "1.0.0",
+    "js-lib": "1.0.0"
+  },
   "devDependencies": {
+    "ts-node": "^8.10.2",
     "typescript": "^3.9.5"
   }
 }
