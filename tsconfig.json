@@ -17,7 +17,5 @@
     /* js lib jsdoc imports */
     "allowJs": true,
     "checkJs": true
-  },
-  "include": ["index.ts", "../js-lib/index.js"],
-  "exclude": ["node_modules"]
+  }
 }
