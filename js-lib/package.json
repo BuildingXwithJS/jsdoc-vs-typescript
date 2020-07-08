@@ -1,5 +1,9 @@
 {
   "name": "js-lib",
   "version": "1.0.0",
-  "dependencies": {}
+  "main": "index.js",
+  "type": "module",
+  "dependencies": {
+    "got": "^11.5.0"
+  }
 }

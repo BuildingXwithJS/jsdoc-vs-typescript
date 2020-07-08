@@ -1,7 +1,14 @@
 {
   "name": "ts-lib",
   "version": "1.0.0",
-  "dependencies": {},
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "build": "tsc -d index.ts"
+  },
+  "dependencies": {
+    "got": "^11.5.0"
+  },
   "devDependencies": {
     "typescript": "^3.9.5"
   }
