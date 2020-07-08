@@ -2,13 +2,12 @@
   "compilerOptions": {
     /* Basic Options */
     "target": "ESNext",
-    "module": "System",
+    "module": "ESNext",
 
     /* Strict Type-Checking Options */
     "strict": true,
 
     /* Module Resolution Options */
-    "esModuleInterop": true,
     "moduleResolution": "node",
 
     /* Advanced Options */

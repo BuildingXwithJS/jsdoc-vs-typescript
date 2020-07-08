@@ -2,9 +2,10 @@
   "name": "ts-lib",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "types": "index.d.ts",
   "scripts": {
-    "build": "tsc -d index.ts"
+    "build": "tsc -p tsconfig.json"
   },
   "dependencies": {
     "got": "^11.5.0"

@@ -3,19 +3,55 @@ import got from 'got';
 const baseUrl = 'https://pokeapi.co/api/v2/';
 const pokemonBaseUrl = `${baseUrl}pokemon/`;
 
-class Pokemon {
+/**
+ * Pokemon instance with data
+ */
+export class Pokemon {
+  /**
+   * Pokemon name
+   */
   name: string = '';
+
+  /**
+   * List of pokemon's abilities
+   */
   abilities: string[] = [];
+
+  /**
+   * List of games for current pokemon
+   */
   games: string[] = [];
+
+  /**
+   * List of items held by current pokemon
+   */
   items: string[] = [];
+
+  /**
+   * List of moves current pokemon is capable of
+   */
   moves: string[] = [];
+
+  /**
+   * List of types for current pokemon
+   */
   types: string[] = [];
+
+  /**
+   * Collection of sprites
+   */
   sprites = {
     default: { front: '', back: '' },
     female: { front: '', back: '' },
     shiny: { front: '', back: '' },
     shinyFemale: { front: '', back: '' },
   };
+
+  /**
+   * Creates an instance of Pokemon.
+   * @param {string} name Pokemon name
+   * @param {any} data Pokemon data
+   */
   constructor(name: string, data: any) {
     this.name = name;
     this.abilities = data.abilities.map((slot: any) => slot.ability.name);
@@ -34,6 +70,11 @@ class Pokemon {
   }
 }
 
+/**
+ * Get pokemon instance by name
+ *
+ * @param name Pokemon name
+ */
 export const getPokemon = async (name: string) => {
   const result = await got(`${pokemonBaseUrl}/${name}`).json();
   const pokemon = new Pokemon(name, result);

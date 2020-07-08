@@ -8,7 +8,7 @@ const pokemonBaseUrl = `${baseUrl}pokemon/`;
  *
  * @class Pokemon
  */
-class Pokemon {
+export class Pokemon {
   /**
    * Pokemon name
    *
